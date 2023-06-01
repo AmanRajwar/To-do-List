@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #7c08a0;
+    display: grid;
+    place-items: center;
+}
+/* main header */
+#main-header {
+    width: 80%;
+    height: 90vh;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+header #features-section {
+    width: 30%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* common styling for both the left and right sections */
+.section-header {
+    height: 140px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.section-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border-bottom: 5px solid #7c08a0;
+    border-radius: 5px;
+
+}
+
+/* Styling of left section */
+.section-header img {
+    height: 70px;
+    /* border: 2px white; */
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* box-shadow: ; */
+}
+
+
+
+.section-header #heading {
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #481957;
+
+}
+
+.section-header #heading h2 {
+    margin-top: 6px;
+    margin-bottom: -10px;
+}
+
+.section-header #heading h1 {
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #a20bd0;
+}
+
+/* features/functions list in left section */
+#functions ul {
+    list-style-type: none;
+    margin-top: 60px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: gray;
+}
+
+#functions ul li {
+    margin-bottom: 25px;
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+#functions ul li:hover {
+    color: #7c08a0;
+}
+
+/* right section styling */
+header #list-section {
+    width: 70%;
+    position: relative;
+    background-color: #a20bd0;
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+}
+
+
+/* right section header styling */
+#list-section .section-header {
+    position: relative;
+    width: 100%;
+}
+
+#list-section .section-header #date-section {
+    width: 125px;
+    height: 75px;
+    margin-left: 100px;
+    /* border: 2px solid #fff; */
+    color: white;
+}
+
+#list-section .section-header #date-section #date-month {
+    margin-bottom: -10px;
+}
+
+#list-section .section-header #date-section #year {
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* font-weight: 900; */
+}
+
+#list-section .section-header #day {
+position: absolute;
+    right: 0;
+    margin-right: 100px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+/* List items in right section */
+
+#list-section #list-container {
+    width: 90%;
+    height: 60%;
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+#list-section #list-container #list {
+    position: relative;
+    list-style: none;
+    overflow: auto;
+}
+#list-section #list-container #list::-webkit-scrollbar {
+display: none;
+}
+
+#list-section #list-container #list li {
+    /* border: 2px solid #fff; */
+    display: flex;
+    height: 50px;
+    width: 500px;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#list-section #list-container #list li label {
+    margin-left: 20px;
+}
+
+#list-section #list-container #list li input{
+    width: 15px;
+    height: 15px;
+    margin-left:20px ;
+    cursor: pointer;
+}
+
+#list-section #list-container #list li i {
+   position: absolute;
+   right: 0;
+   padding-right:20px ;
+   color: gray;
+   transition: 0.3s linear;
+}
+
+#list-section #list-container #list li i:hover{
+    color: #481957;
+    cursor:pointer;
+ }
+
+ /* Enter task field */
+ #list-section #enter-field{
+    /* border: 2px solid #fff; */
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 500px;
+    margin-bottom: 15px ;
+ }
+ #list-section #enter-field input{
+    height: 100%;
+    width: 100%;
+ }
